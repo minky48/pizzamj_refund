@@ -5,3 +5,4 @@ metadata:
 data:
   url:  http://delivery:8080
   fluentd-sever-ip: 10.xxx.xxx.xxx
+
