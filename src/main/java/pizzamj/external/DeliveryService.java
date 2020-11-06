@@ -11,7 +11,7 @@ import java.util.Date;
 @FeignClient(name="delivery", url="${api.url.delivery}")
 public interface DeliveryService {
 
-    @RequestMapping(method= RequestMethod.GET, path="/deliveries")
+    @RequestMapping(method= RequestMethod.POST, path="/deliveries")
     public void delivery(@RequestBody Delivery delivery);
 
 }
