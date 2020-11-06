@@ -24,8 +24,7 @@ spec:
               valueFrom:
                 configMapKeyRef:
                   name: apiurl
-                  key:ur
-
+                  key: url
           readinessProbe:
             httpGet:
               path: '/actuator/health'

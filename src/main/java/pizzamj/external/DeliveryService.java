@@ -8,7 +8,8 @@ import org.springframework.web.bind.annotation.RequestMethod;
 
 import java.util.Date;
 
-@FeignClient(name="delivery", url="http://delivery:8080")
+//@FeignClient(name="delivery", url="http://delivery:8080")
+@FeignClient(name="delivery", url="${api.url.delivery}")
 public interface DeliveryService {
 
     @RequestMapping(method= RequestMethod.POST, path="/deliveries")
